@@ -1,0 +1,33 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
+:root {
+  margin: 0% 0%;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+.card {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 10vh;
+  background-color: #474f78;
+  border: #5d6d7e 1px solid;
+  border-radius: 4%;
+  -webkit-box-shadow: 28px -8px 77px -16px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 28px -8px 77px -16px rgba(0, 0, 0, 0.49);
+  box-shadow: 28px -8px 77px -16px rgba(0, 0, 0, 0.49);
+  transition: all ease-out 0.5s;
+}
+.card:hover {
+  transition: all ease 0.5s;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  background: #1b1341;
+  width: 13vw;
+  height: 11vh;
+  cursor: pointer;
+}

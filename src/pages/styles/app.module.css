@@ -1,0 +1,14 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+
+:root {
+  margin: 0% 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebedef;
+}
