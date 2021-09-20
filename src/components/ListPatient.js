@@ -28,7 +28,6 @@ export default function ListPatient({ type, title }) {
                 DNI
               </TableCell>
               <TableCell className={styles.title}>Fecha de Ingreso</TableCell>
-              <TableCell className={styles.title}>Domicilio</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -39,7 +38,6 @@ export default function ListPatient({ type, title }) {
                 </TableCell>
                 <TableCell align="right">{person.dni}</TableCell>
                 <TableCell align="right">{person.fecha_ingreso}</TableCell>
-                <TableCell align="right">{person.address.location}</TableCell>
               </TableRow>
             ))}
           </TableBody>

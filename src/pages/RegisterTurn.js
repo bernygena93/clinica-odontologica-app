@@ -50,6 +50,7 @@ export default function RegisterTurn() {
       dniPatient: "",
       enrollmentDentist: "",
     });
+    history.push("/register-turn");
   };
   return (
     <div className={styles.body}>

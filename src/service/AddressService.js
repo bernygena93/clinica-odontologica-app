@@ -2,7 +2,7 @@
 
 import { endpointAddressLocal } from "../config/config";
 
-export function getAllAddress(requestInit) {
+export function getAllAddress() {
   return fetch(endpointAddressLocal).then((res) => res.json());
 }
 export function getAddressById(id) {

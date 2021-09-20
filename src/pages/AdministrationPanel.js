@@ -23,6 +23,10 @@ export default function AdministrationPanel() {
       console.log(res);
       setListDentists(res);
     });
+    getAllTurn().then((res) => {
+      console.log(res);
+      setlistTurns(res);
+    });
   }, []);
 
   return (

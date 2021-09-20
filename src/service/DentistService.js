@@ -2,7 +2,7 @@
 
 import { endpointDentistLocal } from "../config/config";
 
-export function getAllDentist(requestInit) {
+export function getAllDentist() {
   return fetch(endpointDentistLocal).then((res) => res.json());
 }
 export function getDentistById(id) {

@@ -2,7 +2,7 @@
 
 import { endpointTurnLocal } from "../config/config";
 
-export function getAllTurn(requestInit) {
+export function getAllTurn() {
   return fetch(endpointTurnLocal).then((res) => res.json());
 }
 export function getTurnById(id) {

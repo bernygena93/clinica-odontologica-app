@@ -2,7 +2,7 @@
 
 import { endpointPatientLocal } from "../config/config";
 
-export function getAllPatient(requestInit) {
+export function getAllPatient() {
   return fetch(endpointPatientLocal).then((res) => res.json());
 }
 export function getPatientById(id) {
