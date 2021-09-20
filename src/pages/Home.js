@@ -12,7 +12,7 @@ export default function Home() {
     "Paciente",
   ]);
   return (
-    <div className={styles.body}>
+    <div className={styles.bodyHome}>
       <img src={logo} />
       <h1 className={styles.title}>Bienvenido!</h1>
       <h2 className={styles.title}>Desea Registrar un..</h2>

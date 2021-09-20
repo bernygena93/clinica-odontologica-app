@@ -10,6 +10,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import RegisterPatient from "./pages/RegisterPatient";
 import RegisterDentist from "./pages/RegisterDentist";
 import AdministrationPanel from "./pages/AdministrationPanel";
+import RegisterTurn from "./pages/RegisterTurn";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/register-patient" component={RegisterPatient} exact />
         <Route path="/register-dentist" component={RegisterDentist} exact />
+        <Route path="/register-turn" component={RegisterTurn} exact />
         <Route
           path="/administration-panel"
           component={AdministrationPanel}
