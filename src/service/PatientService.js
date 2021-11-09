@@ -1,19 +1,23 @@
 /** @format */
 
+import axios from "axios";
 import { endpointPatientLocal } from "../config/config";
 
-export function getAllPatient() {
-  return fetch(endpointPatientLocal).then((res) => res.json());
+export function getAllPatient(config) {
+  return axios.get(endpointPatientLocal, config);
 }
-export function getPatientById(id) {
-  return fetch(endpointPatientLocal + id).then((res) => res.json());
+export function getDni(config) {
+  return axios.get(endpointPatientLocal + "patientdni", config);
 }
-export function savePatient(requestInit) {
-  return fetch(endpointPatientLocal, requestInit).then((res) => res.json());
+export function getPatientById(id, config) {
+  return axios.get(endpointPatientLocal + id, config);
 }
-export function updatePatient(requestInit) {
-  return fetch(endpointPatientLocal, requestInit).then((res) => res.json());
+export function savePatient(requestInit, config) {
+  return axios.post(endpointPatientLocal, requestInit, config);
 }
-export function deletePatientById(id) {
-  return fetch(endpointPatientLocal + id).then((res) => res.json());
+export function updatePatient(requestInit, config) {
+  return axios.put(endpointPatientLocal, requestInit, config);
+}
+export function deletePatientById(id, config) {
+  return axios.delete(endpointPatientLocal + id, config);
 }

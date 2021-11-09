@@ -1,25 +1,23 @@
 /** @format */
-
 import React, { useState } from "react";
-import CardOption from "../components/CardOption";
 import styles from "./styles/home.module.css";
-import logo from "../assets/caduceus-30591_960_720.png";
+import NavBar from "./NavBar";
+import Header from "./Header";
+import BasicTabs from "../components/Panel";
 
 export default function Home() {
-  const [options, setOptions] = useState([
-    "Administracion",
-    "Odontologo",
-    "Paciente",
-  ]);
+  const [type, settype] = useState("");
+
+  const handleType = (option) => {
+    settype(option);
+  };
+
   return (
-    <div className={styles.bodyHome}>
-      <img src={logo} />
-      <h1 className={styles.title}>Bienvenido!</h1>
-      <h2 className={styles.title}>Desea Registrar un..</h2>
-      <div className={styles.container}>
-        <CardOption type={options[0]} link="/administration-panel" />
-        <CardOption type={options[1]} link="register-dentist" />
-        <CardOption type={options[2]} link="register-patient" />
+    <div className={styles.panel}>
+      <NavBar onClickType={handleType} />
+      <div className={styles.content}>
+        <Header type={type} />
+        <BasicTabs type={type} />
       </div>
     </div>
   );
